@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "dependencies": {
+    "promise-polyfill": "6.0.2",
+    "socket.io-client": "^2.1.0",
+    "tslib": "1.7.1",
+    "whatwg-fetch": "2.0.3"
+  },
+  "devDependencies": {
+    "@types/socket.io-client": "^1.4.32",
+    "rollup": "0.49.2",
+    "rollup-plugin-buble": "0.15.0",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "rollup-plugin-uglify": "2.0.1",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "bundle-js": "rollup -c rollup.config.js",
+    "build-adapter": "npm run compile && npm run bundle-js",
+    "start": "npm run build-adapter && react-scripts start",
+    "build": "npm run build-adapter && react-scripts build"
+  }
+}

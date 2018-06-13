@@ -1,0 +1,5 @@
+export const webConstants = {
+    WEB_URL_BASE: (WEB_URL_BASE_CONST || 'http://130.211.15.132/'),
+    WALLET_URL_BASE: (WALLET_URL_BASE_CONST || 'http://35.201.77.76/'),
+    TRADING_CHART_DATA_URL_BASE: (TRADING_CHART_DATA_URL_BASE_CONST || 'http://35.201.86.166')
+};
